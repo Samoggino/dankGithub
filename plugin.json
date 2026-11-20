@@ -2,7 +2,7 @@
   "id": "dankGithub",
   "name": "Dank GitHub",
   "description": "Quick access to your GitHub repositories (public and private) from the launcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "Samoggino",
   "icon": "code",

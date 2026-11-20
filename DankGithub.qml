@@ -289,8 +289,15 @@ QtObject {
     }
 
     function copyText(text) {
-        if (root.isCloneUrl(text))
-            Quickshell.execDetached(["wl-copy", "--", text]);
+        if (!root.isCloneUrl(text))
+            return;
+        Quickshell.execDetached(["dms", "cl", "copy", text]);
+        ToastService.showInfo("Copied to clipboard", text);
+    }
+
+    // Shift+Enter in the launcher pastes the repository URL into the focused app
+    function getPasteText(item) {
+        return root.isGithubUrl(item?.repoUrl) ? item.repoUrl : "";
     }
 
     function getContextMenuActions(item) {

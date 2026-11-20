@@ -22,7 +22,7 @@ A launcher plugin for [DuxShell](https://duxlabs.dev/) (formerly [DankMaterialSh
 
 ### In the launcher
 
-Type the trigger (default `gh`) followed by part of the repository name, then press Enter to open it in your browser.
+Type the trigger (default `gh`) followed by part of the repository name, then press Enter to open it in your browser, or Shift+Enter to paste its URL into the focused app.
 Private repositories are marked with 🔒, forks and archived repositories are tagged in the description, and repositories you added by hand are tagged as *pinned*.
 
 Right click a repository (or press the menu key) to open its context menu:
@@ -34,7 +34,7 @@ Right click a repository (or press the menu key) to open its context menu:
 | **Hide repository** | Removes the repository from the launcher. Bring it back from the settings. |
 | **Open issues** | Opens the repository's issues page. |
 | **Open pull requests** | Opens the repository's pull requests page. |
-| **Copy URL** | Copies the repository's web URL (`wl-copy`). |
+| **Copy URL** | Copies the repository's web URL. |
 | **Copy clone URL (SSH)** | Copies the `git@github.com:…` clone URL. |
 
 ### In the settings
@@ -121,7 +121,6 @@ Only your **public** repositories are listed (set your username in the settings)
 
 * **DuxShell / DankMaterialShell** with launcher plugin support.
 * `bash`, `curl` and `xdg-open`.
-* `wl-copy` (from `wl-clipboard`) for the copy actions.
 * For private repositories: `secret-tool` (package `libsecret`) with a Secret Service provider (GNOME Keyring, KWallet, KeePassXC), **or** a logged-in `gh`.
 
 ## How I Developed It
@@ -130,6 +129,11 @@ Like [Dank Obsidian](https://github.com/Samoggino/dankObsidian), this plugin was
 It has been tested on CachyOS with Hyprland and GNOME Keyring, but it should work on any Linux distribution and any compositor that supports Quickshell.
 
 ## Changelog
+
+### 1.0.1
+
+* Copy actions use the built-in `dms cl copy` (no more `wl-clipboard` dependency) and show a confirmation toast.
+* Shift+Enter pastes the repository URL into the focused app.
 
 ### 1.0.0
 
