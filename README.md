@@ -2,6 +2,8 @@
 
 A launcher plugin for [DuxShell](https://duxlabs.dev/) (formerly [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell)) that lists your GitHub repositories, public **and private**, right in the launcher.
 
+![Screenshot](./screenshot.png)
+
 ## Features
 
 * **All Your Repositories**: Owned, collaborator and organization repositories, including private ones (with a token).
@@ -24,6 +26,8 @@ Type the trigger (default `gh`) followed by part of the repository name, then pr
 Private repositories are marked with 🔒, forks and archived repositories are tagged in the description, and repositories you added by hand are tagged as *pinned*.
 
 Right click a repository (or press the menu key) to open its context menu:
+
+![Context menu](./screenshot-menu.png)
 
 | Action | What it does |
 |---|---|
