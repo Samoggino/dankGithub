@@ -1,0 +1,15 @@
+{
+  "id": "dankGithub",
+  "name": "Dank GitHub",
+  "description": "Quick access to your GitHub repositories (public and private) from the launcher",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Samoggino",
+  "icon": "code",
+  "type": "launcher",
+  "component": "./DankGithub.qml",
+  "settings": "./DankGithubSettings.qml",
+  "requires_dms": ">=1.4.0",
+  "permissions": ["settings_read", "settings_write"],
+  "trigger": "gh"
+}
