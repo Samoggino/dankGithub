@@ -189,7 +189,8 @@ PluginSettings {
                 id: "repo",
                 label: "Repository",
                 placeholder: "owner/name or https://github.com/owner/name",
-                width: 360,
+                // fill the row, leaving room for ListSettingWithInput's 50px "Add" button
+                width: Math.max(200, root.width - 50 - Theme.spacingS),
                 required: true
             }
         ]

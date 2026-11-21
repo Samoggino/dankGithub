@@ -119,8 +119,8 @@ Only your **public** repositories are listed (set your username in the settings)
 
 ## Requirements
 
-* **DuxShell / DankMaterialShell** with launcher plugin support.
-* `bash`, `curl` and `xdg-open`.
+* **DuxShell / DankMaterialShell 2.0** or newer.
+* `bash`, `curl` and `xdg-open` (package `xdg-utils`).
 * For private repositories: `secret-tool` (package `libsecret`) with a Secret Service provider (GNOME Keyring, KWallet, KeePassXC), **or** a logged-in `gh`.
 
 ## How I Developed It
@@ -129,6 +129,11 @@ Like [Dank Obsidian](https://github.com/Samoggino/dankObsidian), this plugin was
 It has been tested on CachyOS with Hyprland and GNOME Keyring, but it should work on any Linux distribution and any compositor that supports Quickshell.
 
 ## Changelog
+
+### 1.0.2
+
+* Requires DMS 2.0 or newer (the settings page uses the DMS 2.0 widgets).
+* The "Extra Repositories" field now adapts to the settings page width.
 
 ### 1.0.1
 
